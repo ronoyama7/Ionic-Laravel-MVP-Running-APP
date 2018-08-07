@@ -1,0 +1,27 @@
+body {
+	font-size:$font-1*16;
+
+	*, *:after, *:before {
+		box-sizing:border-box;
+	}
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+.acenter {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+}
+
+.no_list {
+	margin:0;
+	padding:0;
+	list-style:none;
+}

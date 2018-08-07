@@ -1,0 +1,37 @@
+.wysiwyg {
+	margin-top: $font-1*45;
+	margin-bottom: $font-1*40;
+
+	& > * {
+		&:first-child {
+			margin-top: 0;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	h2 {
+		color: $c-blue;
+		font-size: $font-1*24;
+		font-weight: 700;
+		line-height: $font-1*28;
+		margin:  $font-1*24 0;
+	}
+	p, li {
+		color: black;
+		font-size: $font-1*16;
+		font-weight: 400;
+		line-height: $font-1*24;
+	}
+	img {
+		display: block;
+		margin: $font-1*30 auto;
+		border-radius: 16px;
+
+		&.view-logo {
+			border-radius: 0;
+			max-width: 226px;
+			margin: $font-1*50 auto;
+		}
+	}
+}

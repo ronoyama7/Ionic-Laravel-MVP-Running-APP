@@ -1,0 +1,47 @@
+.stats {
+	display: flex;
+	text-align: center;
+	padding: $font-1*16 0 $font-1*12;
+	margin-left: -$content-padding;
+	margin-right: -$content-padding;
+	background: white;
+
+	&-part {
+		position: relative;
+		flex: 1;
+
+		&-label {
+			font-size: $font-1*16;
+			font-weight: 400;
+		}
+		&-value {
+			color: $c-blue;
+			font-size: $font-1*35;
+			font-weight: 500;
+			margin-top: $font-1*4;
+		}
+		& + & {
+			&:before {
+				@include show;
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				width: 3px;
+				height: 30px;
+				background: rgba(black, 0.25);
+				transform: translateX(-50%);
+			}
+		}
+	}
+	&.view-on_dark {
+		background: none;
+
+		.stats-part {
+			&-value {
+				color: $c-yellow
+			}
+		}
+	}
+}

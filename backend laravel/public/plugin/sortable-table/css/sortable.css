@@ -1,0 +1,42 @@
+body.dragging, body.dragging * {
+    cursor: move !important;
+  }
+  
+.dragged {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 2000;
+}
+
+ol.example li.placeholder {
+    position: relative;
+/** More li styles **/
+}
+ol.example li.placeholder:before {
+    position: absolute;
+/** Define arrowhead **/
+}
+ol.simple_with_animation {
+    border: 1px solid #999999;
+}
+
+ol.vertical {
+    padding: 0px;
+    margin: 0 0 9px 0;
+    min-height: 10px;
+}
+ol {
+    list-style-type: none;
+}
+ol {
+    list-style: decimal;
+}
+ol.vertical li {
+    display: block;
+    min-height: 60px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    color: #0088cc;
+    background: #eeeeee;
+}

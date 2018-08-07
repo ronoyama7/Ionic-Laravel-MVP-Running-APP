@@ -1,0 +1,61 @@
+.info {
+	position: relative;
+
+	&:before {
+		@include show;
+		@include absolut;
+		right: 0;
+		bottom: 0;
+		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, transparent 100%);
+	}
+	&-bg {
+		display: block;
+		height: 66.666vh;
+		object-fit: cover;
+	}
+	&-itms {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(black, 0.5);
+		color: white;
+		padding: $font-1*12 $content-padding;
+		display: flex;
+	}
+	&-itm {
+		text-align: center;
+		flex: 1;
+
+		&:before {
+			@include show;
+			margin: 0 auto $font-1*14;
+			width: $font-1*34;
+			height: $font-1*34;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		&-value {
+			color: $c-yellow;
+			font-size: $font-1*22;
+			font-weight: 700;
+		}
+		&-label {
+			font-size: $font-1*15;
+			font-weight: 400;
+			margin-top: $font-1*4;
+		}
+		&.view-distance:before {
+		//	background-image: url(../assets/imgs/icon-marker.svg);
+			background-size: $font-1*26 $font-1*34;
+		}
+		&.view-time:before {
+			background-image: url(../assets/imgs/icon-time.svg);
+			background-size: $font-1*26 $font-1*34;
+		}
+		&.view-pace:before {
+			background-image: url(../assets/imgs/icon-pace.svg);
+			background-size: $font-1*26 $font-1*34;
+		}
+	}
+}

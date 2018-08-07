@@ -1,0 +1,18 @@
+.tabs {
+	.tabbar {
+		background: $c-blue;
+	}
+	.tab-button {
+		&-icon {
+			margin: 0;
+			color: $c-white__inactive;
+			transition: $trans;
+		}
+		&[aria-selected="true"] .tab-button-icon {
+			color: $c-yellow;
+		}
+		&.icon-only {
+			min-height: 56px;
+		}
+	}
+}

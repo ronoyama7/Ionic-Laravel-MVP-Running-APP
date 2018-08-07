@@ -1,0 +1,10 @@
+.linkboxes {
+	margin-bottom:$font-1*20;
+	
+	route, place {
+		display: block;
+	}
+	route + route, place + place {
+		margin-top: $font-1*26;
+	}
+}

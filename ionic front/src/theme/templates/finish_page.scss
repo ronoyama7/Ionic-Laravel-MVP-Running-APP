@@ -1,0 +1,28 @@
+.finish_page {
+	background: $c-blue;
+	color: white;
+	text-align: center;
+
+	&-route {
+		display: block;
+		max-height: 21vh;
+		margin: 10vh auto 12vh;
+	}
+	&-title {
+		font-size: $font-1*34;
+		font-weight: 500;
+		line-height: $font-1*41;
+		margin: 8vh 0;
+	}
+	&-text {
+		font-size: $font-1*16;
+		font-weight: 400;
+	}
+	&-cnt {
+		margin:0 0 4vh;
+		
+		.finish_page-title {
+			margin:0 0 1vh;
+		}
+	}
+}

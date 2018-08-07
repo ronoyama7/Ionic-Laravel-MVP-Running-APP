@@ -1,0 +1,41 @@
+<ion-content  class="detail_page">
+	<ion-navbar  (tap) = "back()" class="view-on_dark">
+		<ion-title>{{title}}</ion-title>
+	</ion-navbar>
+	<div class="info">
+		<img [src]="image" alt="" class="info-bg">
+		<div class="info-itms">
+			<div class="info-itm view-distance">
+				<div class="info-itm-value">{{distance}}</div>
+				<div class="info-itm-label">celková vzdálenost</div>
+			</div>
+			<div class="info-itm view-time">
+				<div class="info-itm-value">{{estimate}}</div>
+				<div class="info-itm-label">celkový čas</div>
+			</div>
+			<div class="info-itm view-pace">
+				<div class="info-itm-value">{{speed}}</div>
+				<div class="info-itm-label">průměrné tempo</div>
+			</div>
+		</div>
+	</div>
+	<div id = "editor" class="wysiwyg" padding>
+	</div>
+	<map-component 
+	[zoom] = 12
+	class="map-position"
+	[routeData] = "routeData"
+	[markerData] = "markerData"
+    mapType = "nav"
+	[trackFlag] = false
+	[UILockFlag] = true
+	[FitBoundFlag] = true
+	></map-component>
+	<div *ngIf="!!image_profile" class="elevation">
+		<img [src]="image_profile" alt="">
+	</div>
+</ion-content>
+
+<ion-footer>
+	<button ion-button full (tap)="open()">{{buttonTitle}}</button>
+</ion-footer>

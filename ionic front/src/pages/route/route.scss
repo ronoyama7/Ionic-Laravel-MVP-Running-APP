@@ -1,0 +1,12 @@
+page-route {
+    .map-position {
+        width:110%;
+        height: 55%;
+        margin-left: -5%;
+    }
+    map-component {
+        .canvas {
+            height: 50% !important;
+        }
+    }
+}

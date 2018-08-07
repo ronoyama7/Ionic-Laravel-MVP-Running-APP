@@ -1,0 +1,18 @@
+.progress {
+	display: flex;
+
+	&-itm {
+		border-radius: 50%;
+		width: 8px;
+		height: 8px;
+		border: 1px solid $c-blue;
+		background: white;
+
+		& + & {
+			margin-left: 9px;
+		}
+		&.view-active {
+			background: $c-blue;
+		}
+	}
+}

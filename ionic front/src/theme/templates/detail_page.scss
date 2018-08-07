@@ -1,0 +1,21 @@
+.detail_page {
+	position: relative;
+
+	.toolbar {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1000;
+		display: block;
+		padding: $content-padding;
+	}
+	.wysiwyg[padding] {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.map {
+		margin-top: $font-1*40;
+		margin-bottom: $font-1*40;
+	}
+}

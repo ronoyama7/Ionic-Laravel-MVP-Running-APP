@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="33px" viewBox="0 0 32 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>pace</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="trat-detail" transform="translate(-290.000000, -474.000000)" fill="#FFFFFF">
+            <g id="stats" transform="translate(29.000000, 474.000000)">
+                <g id="Group-2" transform="translate(231.000000, 0.000000)">
+                    <path d="M42.5637989,22.7716627 L42.5637989,30.7647105 C42.5637989,31.8982716 43.1635414,32.3254637 43.9033611,31.7346866 L61.6404101,17.5709089 C62.3909738,16.9715523 62.3802298,16.0222929 61.6404101,15.4315158 L43.9033611,1.26773805 C43.1527974,0.668381465 42.5637989,1.11123406 42.5637989,2.23771419 L42.5637989,10.230762 L31.3395622,1.26773805 C30.5889985,0.668381465 30,1.11123406 30,2.23771419 L30,30.7647105 C30,31.8982716 30.5997424,32.3254637 31.3395622,31.7346866 L42.5637989,22.7716627 Z" id="pace" transform="translate(46.099656, 16.500000) rotate(-90.000000) translate(-46.099656, -16.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

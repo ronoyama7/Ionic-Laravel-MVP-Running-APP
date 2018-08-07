@@ -1,0 +1,22 @@
+<ion-content padding class="finish_page">
+	<div class="finish_page-title view-done">Jsi v cíli!</div>
+	<img src="assets/imgs/route_example.svg" alt="" class="finish_page-route">
+	<div class="finish_page-cnt">
+		<div class="finish_page-title">Gratulujeme!</div>
+		<div class="finish_page-text">Co takhle další kolečko?</div>
+	</div>
+	<div class="stats view-on_dark">
+		<div class="stats-part">
+			<div class="stats-part-label">čas</div>
+			<div class="stats-part-value">{{time}}</div>
+		</div>
+		<div class="stats-part">
+			<div class="stats-part-label">do cíle</div>
+			<div class="stats-part-value">{{distance}}</div>
+		</div>
+	</div>
+</ion-content>
+
+<ion-footer>
+	<button ion-button full class="view-white" (tap)="close()">Ukončit běh</button>
+</ion-footer>

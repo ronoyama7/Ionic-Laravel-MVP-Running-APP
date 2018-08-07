@@ -1,0 +1,71 @@
+<ion-content padding class="map_page">
+	<!-- <div style=" text-align: center;">
+			<audio controls loop autoplay >
+				<source src="assets/audio/run.mp3" type="audio/mp3">
+			</audio>
+	</div> -->
+	<div class="navigate" style="position: relative;">
+		<!-- <div class="navigate-arrow">
+			<img src="assets/imgs/navigation/left.svg" alt="">
+		</div> -->
+		<div class="navigation-text">
+			<span>{{instructions_dis}}</span>
+			<marquee id = "instruction"></marquee>
+		</div>
+		<!-- <button ion-button icon-only class="view-white" (tap)="movement('up')">
+			<ion-icon name="md-arrow-up"></ion-icon>
+		</button>
+		<button ion-button icon-only class="view-white" (tap)="movement('down')">
+			<ion-icon name="md-arrow-down"></ion-icon>
+		</button>
+		<button ion-button icon-only class="view-white" (tap)="movement('left')">
+			<ion-icon name="md-arrow-back"></ion-icon>
+		</button>
+		<button ion-button icon-only class="view-white" (tap)="movement('right')">
+			<ion-icon name="md-arrow-forward"></ion-icon>
+		</button> -->
+		<!-- <div class="navigate-audio">
+			<button ion-button icon-only class="view-white" (tap)="audio()">
+				<ion-icon *ngIf = "enableAudio" name="md-volume-off"></ion-icon>
+				<ion-icon *ngIf = "!enableAudio" name="md-volume-up"></ion-icon>
+			</button>
+		</div> -->
+		<div class="navigate-locate">
+			<button ion-button icon-only class="view-white" (tap)="gotoMe()">
+				<ion-icon name="locate"></ion-icon>
+			</button>
+		</div>
+	</div>
+	<div class="gps-content">
+		<div class="title">GPS</div>
+		<img class="image" [src]="gpsStatusImage" alt="">
+		<div class="state">{{gpsStatusTitle}}</div>
+	</div>
+	<map-component 
+	[zoom] = 16.5
+	class="map-position"
+	[routeData] = "routeData"
+	[markerData] = "markerData"
+    mapType = "user"
+	[trackFlag] = true
+	[UILockFlag] = true
+	[FitBoundFlag] = false
+	></map-component>
+	<div class="stats">
+		<div class="stats-part">
+			<div class="stats-part-label">čas</div>
+			<div class="stats-part-value">{{time}}</div>
+		</div>
+		<div class="stats-part">
+			<div class="stats-part-label">do cíle</div>
+			<div class="stats-part-value">{{distance}}</div>
+		</div>
+	</div>
+</ion-content>
+
+<ion-footer>
+	<ion-buttons>
+		<button ion-button full (tap)="finish()">Ukončit</button>
+		<button ion-button full class="view-light" (tap)="pause()">{{status}}</button>
+	</ion-buttons>
+</ion-footer>

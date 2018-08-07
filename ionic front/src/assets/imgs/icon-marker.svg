@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="33px" viewBox="0 0 26 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>distance</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="detail-mista" transform="translate(-175.000000, -460.000000)" fill="#FFFFFF">
+            <g id="Group" transform="translate(154.000000, 460.000000)">
+                <path d="M32.6333429,31.9772981 C32.6333429,31.9772981 21,20.1797017 21,13 C21,5.82029825 26.8202983,0 34,0 C41.1797017,0 47,5.82029825 47,13 C47,20.1797017 35.3666571,31.9772981 35.3666571,31.9772981 C34.6182714,32.7820124 33.3881268,32.7788142 32.6333429,31.9772981 Z M34,18.5714286 C37.077015,18.5714286 39.5714286,16.077015 39.5714286,13 C39.5714286,9.92298497 37.077015,7.42857143 34,7.42857143 C30.922985,7.42857143 28.4285714,9.92298497 28.4285714,13 C28.4285714,16.077015 30.922985,18.5714286 34,18.5714286 Z" id="distance"></path>
+            </g>
+        </g>
+    </g>
+</svg>

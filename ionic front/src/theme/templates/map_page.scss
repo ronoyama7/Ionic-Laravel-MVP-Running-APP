@@ -1,0 +1,9 @@
+.map_page {
+	.scroll-content {
+		display: flex;
+		flex-direction: column;
+	}
+	.map {
+		flex: 1;
+	}
+}

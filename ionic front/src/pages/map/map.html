@@ -1,0 +1,32 @@
+<ion-content padding class="map_page">
+	<ion-navbar>
+		<ion-title>Mapa</ion-title>
+		<ion-buttons end>
+			<!-- <button ion-button icon-only class="view-white" (tap)="movement('up')">
+					<ion-icon name="md-arrow-up"></ion-icon>
+			</button>
+			<button ion-button icon-only class="view-white" (tap)="movement('down')">
+				<ion-icon name="md-arrow-down"></ion-icon>
+			</button>
+			<button ion-button icon-only class="view-white" (tap)="movement('left')">
+				<ion-icon name="md-arrow-back"></ion-icon>
+			</button>
+			<button ion-button icon-only class="view-white" (tap)="movement('right')">
+				<ion-icon name="md-arrow-forward"></ion-icon>
+			</button> -->
+			<button ion-button icon-only class="view-white" (tap)="gotoMe()">
+	        	<ion-icon name="locate"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-navbar>
+	<map-component
+	[zoom] = 12
+	class="map-position"
+	[routeData] = "routeData"
+	[markerData] = "markerData"
+    mapType = "nav"
+	[trackFlag] = false
+	[UILockFlag] = true
+	mapUsing = "map"
+	></map-component>
+</ion-content>

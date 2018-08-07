@@ -1,0 +1,18 @@
+{
+	"android": {
+		"debug": {
+			"keystore": "C:\\Projects\\Cordova\\runningmaps_app\\runningmaps-prod.jks",
+			"storePassword": "XPllzrjOPccHdJeb",
+			"alias": "runningmaps",
+			"password": "ggDvne6pVVrWOPPl",
+			"keystoreType": ""
+		},
+		"release": {
+			"keystore": "C:\\Projects\\Cordova\\runningmaps_app\\runningmaps-prod.jks",
+			"storePassword": "XPllzrjOPccHdJeb",
+			"alias": "runningmaps",
+			"password": "ggDvne6pVVrWOPPl",
+			"keystoreType": ""
+		}
+	}
+}

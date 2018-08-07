@@ -1,0 +1,20 @@
+<ion-content  class="detail_page">
+	<ion-navbar class="view-on_dark">
+		<ion-title>{{title}}</ion-title>
+	</ion-navbar>
+	<div class="info">
+		<img [src]="image" alt="" class="info-bg">
+		<div class="info-itms">
+			<div class="info-itm view-distance">
+				<div class="info-itm-value">{{distance}}</div>
+				<div class="info-itm-label">od vás</div>
+			</div>
+		</div>
+	</div>
+	<div id = "editor" class="wysiwyg" padding>
+	</div>
+</ion-content>
+
+<ion-footer>
+	<button ion-button full (tap)="open()">Navigovat na místo</button>
+</ion-footer>

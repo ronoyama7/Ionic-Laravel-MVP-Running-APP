@@ -1,0 +1,12 @@
+<ion-content padding class="linkboxes_page">
+	<ion-navbar>
+		<ion-title>Tratě</ion-title>
+	</ion-navbar>
+	<div *ngIf = "show" class="linkboxes">
+		<route *ngFor = "let item of items" [item]="item"></route>
+		<ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+			<ion-infinite-scroll-content *ngIf = "scroll_show"></ion-infinite-scroll-content>
+		</ion-infinite-scroll>
+	</div>
+	
+</ion-content>

@@ -1,0 +1,50 @@
+<ion-content class="onboarding">
+
+	<ion-slides class="onboarding-slides" #Slides (ionSlideDidChange)="slideChanged()">
+		<ion-slide class="onboarding-slide" padding>
+			<div class="onboarding-slide-img">
+				<img src="assets/imgs/logo.svg" alt="">
+			</div>
+			<div class="onboarding-slide-cnt">
+				<div id="editor-1" class="wysiwyg">
+					<h2>Service: Excellent as always from Apple Store. Location: Super convenient location for</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare sed magna vel posuere.</p>
+				</div>
+			</div>
+		</ion-slide>
+		<ion-slide class="onboarding-slide" padding>
+			<div class="onboarding-slide-img view-screen">
+				<img src="assets/imgs/logo.svg" alt="">
+			</div>
+			<div class="onboarding-slide-cnt">
+				<div id="editor-2" class="wysiwyg">
+					<h2>Service: Excellent as always from Apple Store. Location: Super convenient location for</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare sed magna vel posuere.</p>
+				</div>
+			</div>
+		</ion-slide>
+		<ion-slide class="onboarding-slide" padding>
+			<div class="onboarding-slide-img view-screen">
+				<img src="assets/imgs/logo.svg" alt="">
+			</div>
+			<div class="onboarding-slide-cnt">
+				<div id="editor-3" class="wysiwyg">
+					<h2>Service: Excellent as always from Apple Store. Location: Super convenient location for</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare sed magna vel posuere.</p>
+				</div>
+			</div>
+		</ion-slide>
+	</ion-slides>
+	<div class="progress page-control">
+		<div  *ngIf = "pageIndex == 0" class="progress-itm view-active"></div>
+		<div  *ngIf = "pageIndex != 0" class="progress-itm"></div>
+		<div  *ngIf = "pageIndex == 1" class="progress-itm view-active"></div>
+		<div  *ngIf = "pageIndex != 1" class="progress-itm"></div>
+		<div  *ngIf = "pageIndex == 2" class="progress-itm view-active"></div>
+		<div  *ngIf = "pageIndex != 2" class="progress-itm"></div>
+	</div>
+</ion-content>
+
+<ion-footer>
+	<button ion-button full (tap)="skip()">Přeskočit</button>
+</ion-footer>

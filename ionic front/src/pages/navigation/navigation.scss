@@ -1,0 +1,53 @@
+page-navigation {
+    .map-position {
+        width:110%;
+        height: 55%;
+        margin-left: -5%;
+    }
+    .navigation-text {
+        font-size: 9.0678vw;
+        font-weight: 500;
+        padding: 0 3.1346vw;
+        width: 100%;
+        text-align: center;
+    }
+    .item-inner {
+        border-bottom: 0px !important;
+    }
+    .navigate-audio {
+        position: absolute;
+        top: 16px;
+        right: 18px;
+     }
+     .gps-content {
+        position: absolute;
+        top: 28%;
+        width: 152px;
+        height: 25px;
+        z-index: 999;
+        float: left;
+        background-color: white;
+        left: 35%;
+         .title {
+            width: 30px;
+            height: 25px;
+            float: left;
+            margin-top: 5px;
+            margin-left: 8px;
+         }
+         .image{
+            width: 25px;
+            height: 25px;
+            float: left;
+            margin-left: 3px;
+         }
+         .state{
+            width: 80px;
+            height: 25px;
+            float: left;
+            margin-left: 5px;
+            margin-top: 5px;
+            text-align: center;
+         }
+     }
+}

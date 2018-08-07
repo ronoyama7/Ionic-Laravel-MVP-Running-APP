@@ -1,0 +1,113 @@
+// clearfix
+@mixin clearfix {
+	&:after {
+		content:"";
+		display:block;
+		clear:both;
+	}
+}
+
+// to hide informative headlines or so one
+@mixin dumb_only {
+	position: fixed;
+	top: -200px;
+	left: -200px;
+}
+
+// show quickly before or after
+@mixin show {
+	content:"";
+	display:block;
+}
+
+// absolutka
+@mixin absolut {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+// if the text is too long, its end is replaced by dots
+@mixin dots {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+// placeholder
+@mixin placeholder($phcolor, $phopacity) {
+	&::-webkit-input-placeholder {
+		color: $phcolor;
+		opacity: $phopacity;
+	}
+	&:-moz-placeholder {
+		color: $phcolor;
+		opacity: $phopacity;
+	}
+	&::-moz-placeholder {
+		color: $phcolor;
+		opacity: $phopacity;
+	}
+	&:-ms-input-placeholder {
+		color: $phcolor;
+		opacity: $phopacity;
+	}
+}
+
+/*
+  This mixin can be used to set the object-fit:
+  @include object-fit(contain);
+
+  or object-fit and object-position:
+  @include object-fit(cover, top);
+*/
+@mixin object-fit($fit: fill, $position: null){
+	object-fit: $fit;
+
+	@if $position {
+		object-position: $position;
+		font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+	} @else {
+		font-family: 'object-fit: #{$fit}';
+	}
+}
+
+// mixins for using vh - $ratio equals 16px on full HD (maybe it would be better to update for HD ready?)
+$ratio: 1.67539 / 16;
+
+@mixin top($size) {
+	top:$size + 0px;
+	top:($ratio) * $size + 0vh;
+}
+@mixin left($size) {
+	left:$size + 0px;
+	left:($ratio) * $size + 0vh;
+}
+@mixin font-size($size) {
+	font-size:$size + 0px;
+	font-size:($ratio) * $size + 0vh;
+}
+@mixin line-height($size) {
+	line-height:$size + 0px;
+	line-height:($ratio) * $size + 0vh;
+}
+@mixin height($size) {
+	height:$size + 0px;
+	height:($ratio) * $size + 0vh;
+}
+@mixin max-height($size) {
+	max-height:$size + 0px;
+	max-height:($ratio) * $size + 0vh;
+}
+@mixin width($size) {
+	width:$size + 0px;
+	width:($ratio) * $size + 0vh;
+}
+@mixin margin($size1, $size2, $size3, $size4) {
+	margin:$size1 + 0px $size2 + 0px $size3 + 0px $size4 + 0px;
+	margin:($ratio) * $size1 + 0vh ($ratio) * $size2 + 0vh ($ratio) * $size3 + 0vh ($ratio) * $size4 + 0vh;
+}
+@mixin padding($size1, $size2, $size3, $size4) {
+	padding:$size1 + 0px $size2 + 0px $size3 + 0px $size4 + 0px;
+	padding:($ratio) * $size1 + 0vh ($ratio) * $size2 + 0vh ($ratio) * $size3 + 0vh ($ratio) * $size4 + 0vh;
+}

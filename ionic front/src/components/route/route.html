@@ -1,0 +1,19 @@
+<div class="linkbox" (tap)="open()">
+	<img [src]="item.image" alt="" class="linkbox-bg">
+	<div class="linkbox-cnt">
+		<div class="linkbox-cnt-title">
+			{{item.title}}
+		</div>
+		<div class="linkbox-cnt-line">
+			<!-- <div class="linkbox-cnt-desc">
+				<span> {{item.title_text}} </span>
+			</div> -->
+			<div class="linkbox-cnt-distance">
+				<span>Délka trate: {{item.distance}}</span>
+			</div>
+			<div class="linkbox-cnt-distance">
+				<span>Vzdalenost: {{item.userDistance}}</span>
+			</div>
+		</div>
+	</div>
+</div>

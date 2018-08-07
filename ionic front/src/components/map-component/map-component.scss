@@ -1,0 +1,12 @@
+map-component {
+    .border_radius {
+        border: 2px solid white !important;
+        border-radius: 50%;
+    }
+    .hide_layer {
+        opacity: 0;
+    }
+    .show_layer {
+        opacity: 100 !important;
+    }
+}

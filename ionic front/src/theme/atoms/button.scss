@@ -1,0 +1,21 @@
+.button, button {
+	background: $c-blue;
+	margin: 0;
+	height: 56px;
+	color: white;
+	font-size: $font-1*16;
+	font-weight: 600;
+	box-shadow: none;
+
+	&.view-light {
+		background: $c-white;
+		color: $c-blue;
+	}
+	&.view-white {
+		background: white;
+		color: $c-blue;
+	}
+	&[icon-only] {
+		font-size: $font-1*22;
+	}
+}

@@ -1,0 +1,1 @@
+ionic cordova build android --aot --prod --release --buildConfig=build.json
